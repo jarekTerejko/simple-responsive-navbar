@@ -8,11 +8,12 @@ toggleBtn.addEventListener('click', () => {
 const navLinks = document.querySelectorAll('nav li a')
 console.log(navLinks)
 
-navLinks.forEach((link) => {
+navLinks.forEach(link => {
 	link.addEventListener('click', () => {
-		navList.classList.remove('active')
+		if (navList.classList.contains('active')) {
+			navList.classList.remove('active')
+		}
 	})
-
 })
 
 window.addEventListener('resize', () => {
