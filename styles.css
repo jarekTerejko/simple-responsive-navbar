@@ -1,0 +1,95 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: #263238;
+}
+
+nav {
+	background-color: #37474f;
+	width: 100%;
+}
+
+ul {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	height: auto;
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+}
+
+ul li:hover {
+	background-color: #d84315;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	padding: 20px;
+}
+
+.toggle {
+	padding: 10px 20px;
+	text-align: right;
+	background-color: #263238;
+	font-size: 30px;
+	color: #fff;
+	display: none;
+
+}
+
+.toggle .fa-bars {
+	cursor: pointer
+}
+
+section {
+	background-color: darkgrey;
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border: 2px solid #263238;
+	margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+	.toggle {
+		display: block;
+	}
+
+	ul {
+		display: none;
+	}
+
+	ul li {
+		display: block;
+	}
+
+	.active {
+		display: block;
+	}
+}
